@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.3 — Connecting an Agent to Real Business Data</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="accent-bar m5"></div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="dot">&gt;</span> free-ai-business-course</div>
+      <nav>
+        <a href="../../index.html">All lessons</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="lesson-header">
+      <div class="breadcrumb"><a href="../../index.html">Course</a> / Module 5: AI Agent Automation / Lesson 5.3</div>
+      <h1>Connecting an Agent to Real Business Data</h1>
+      <p class="lesson-desc">Hooking your agent up to real inputs — a contact form, an inbox, or a live pipeline — instead of test data.</p>
+    </div>
+
+
+    <div class="video-embed">
+      <iframe src="about:blank" title="Lesson video placeholder" allowfullscreen></iframe>
+    </div>
+
+    <div class="lesson-body">
+<p>A test contact proves the agent logic works. This lesson is about making sure real leads actually reach it.</p>
+<h2>Common real-data connections</h2>
+<ul>
+<li><strong>A website contact form</strong> feeding directly into the Leads/Contacts table, so nothing has to be manually re-entered.</li>
+<li><strong>An inbox</strong> (if the client currently gets leads by email) — describe this to Base44 and let it suggest how to bridge the two rather than assuming a specific integration exists.</li>
+<li><strong>Your own Lead Finder output</strong> from 2.2, if you're testing this against your own pipeline before a client's.</li>
+</ul>
+<h2>Copy this</h2>
+      <div class="prompt-block">
+        <div class="prompt-head">
+          <span>Base44 prompt — connect a real source</span>
+          <span class="copy-hint">adapt to whichever source applies, paste into Base44</span>
+        </div>
+        <pre>I want new leads to flow into this app's Contacts table automatically from [CONTACT FORM / EMAIL INBOX / OTHER SOURCE], instead of me entering them by hand.
+
+Walk me through what's needed to connect that source, and set it up so every new lead from there lands in the Contacts table with Status set to "New Lead" automatically, which will trigger the follow-up agent from 5.2.</pre>
+      </div>
+
+<h2>Test it for real</h2>
+<p>Submit a real test entry through the actual connected source (fill out the real contact form, send a real test email) rather than just adding a row by hand — this is the only way to catch a connection that looks right but silently isn't working.</p>
+      <div class="deliverable">
+        <span class="deliverable-label">What you should have when this lesson is done</span>
+        One real lead successfully flowing end-to-end from a live source into your app, triggering the 5.2 agent.
+      </div>
+
+    </div>
+
+    <div class="lesson-nav">
+      <a href="5.2-building-your-first-agent.html">&larr; Back: 5.2</a>
+      <a class="next" href="5.4-packaging-as-recurring.html">Next: 5.4 &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="site-footer wrap">
+    Free AI Business Course
+  </footer>
+
+</body>
+</html>

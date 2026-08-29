@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.2 — Building Your First Agent in Base44</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="accent-bar m5"></div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="dot">&gt;</span> free-ai-business-course</div>
+      <nav>
+        <a href="../../index.html">All lessons</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="lesson-header">
+      <div class="breadcrumb"><a href="../../index.html">Course</a> / Module 5: AI Agent Automation / Lesson 5.2</div>
+      <h1>Building Your First Agent in Base44</h1>
+      <p class="lesson-desc">A full build-along — the agent use-case you chose in 5.1, built and working.</p>
+    </div>
+
+    <div class="env-check">
+      <span class="env-label">Before you start this lesson</span>
+      <ul>
+        <li>A free Base44 account</li>
+        <li>Your 3.3 Client Pipeline / operations app (this agent connects to it)</li>
+        <li>The use-case you chose in 5.1</li>
+      </ul>
+    </div>
+
+    <div class="video-embed">
+      <iframe src="about:blank" title="Lesson video placeholder" allowfullscreen></iframe>
+    </div>
+
+    <div class="lesson-body">
+<p>This follows the same build pattern as 3.1 and 2.2 — describe it precisely, let Base44 build it, test it by hand, fix it in plain English. If those two builds felt natural by now, this one should too.</p>
+      <div class="callout">
+        <span class="callout-label">Base44 step</span>
+        Open your 3.3 Client Pipeline app (or a duplicate of it for this exercise) and paste the prompt below, adjusted for the use-case you picked in 5.1.
+      </div>
+
+<h2>The prompt (example: follow-up nudge agent)</h2>
+      <div class="prompt-block">
+        <div class="prompt-head">
+          <span>Base44 build prompt</span>
+          <span class="copy-hint">select all, adapt to your chosen use-case, paste into Base44</span>
+        </div>
+        <pre>Add an automated follow-up agent to this app.
+
+It should:
+- Check daily for any contact whose Status is "New Lead" or "Contacted" with no update in the last 3 days
+- For each one, automatically send a short, friendly follow-up email or log a reminder for me to send one (whichever this tool supports)
+- Log every automated follow-up in the contact's Notes field with a timestamp, so I can see what was sent and when
+- Never send more than 2 automated follow-ups to the same contact without me reviewing it first
+
+Keep the message tone friendly and low-pressure, not pushy.</pre>
+      </div>
+
+<h2>Steps</h2>
+<ol><li>Paste the prompt (adapted to your 5.1 use-case) into your app.</li><li>Create a test contact with an old "last updated" date to trigger the follow-up condition.</li><li>Confirm the agent actually fires — check the Notes log for the automated entry.</li><li>Publish.</li></ol>
+      <div class="deliverable">
+        <span class="deliverable-label">What you should have when this lesson is done</span>
+        A working, published agent inside your operations app, confirmed to fire correctly against a test contact.
+      </div>
+
+    </div>
+
+    <div class="lesson-nav">
+      <a href="5.1-what-agents-do.html">&larr; Back: 5.1</a>
+      <a class="next" href="5.3-connecting-real-data.html">Next: 5.3 &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="site-footer wrap">
+    Free AI Business Course
+  </footer>
+
+</body>
+</html>
