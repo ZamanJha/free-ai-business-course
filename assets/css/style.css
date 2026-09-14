@@ -383,3 +383,114 @@ footer.site-footer {
   color: var(--text-faint);
   font-size: 13px;
 }
+
+/* ==========================================================================
+   Plan-premise components — the Base44 Pro through-line
+   ========================================================================== */
+
+/* ---- Program requirement band (index) ---- */
+.plan-band {
+  margin: 8px 0 32px;
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--mod-4);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 24px 26px;
+}
+.plan-band .plan-label {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mod-4);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+.plan-band h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+.plan-band p { color: var(--text-dim); font-size: 15px; margin: 0 0 14px; max-width: 680px; }
+.plan-band .plan-points { list-style: none; margin: 0 0 18px; padding: 0; }
+.plan-band .plan-points li {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  padding: 7px 0 7px 26px;
+  position: relative;
+}
+.plan-band .plan-points li::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  color: var(--mod-4);
+  font-family: var(--mono);
+}
+.plan-band .plan-cta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.plan-band .plan-cta .fineprint { font-size: 12.5px; color: var(--text-faint); }
+
+/* ---- Year arc (index) ---- */
+.year-arc { margin: 36px 0 8px; }
+.year-arc h2 { font-size: 22px; font-weight: 800; margin: 0 0 6px; letter-spacing: -0.01em; }
+.year-arc .arc-sub { color: var(--text-dim); font-size: 14.5px; margin: 0 0 18px; max-width: 680px; }
+.arc-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 860px) { .arc-steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .arc-steps { grid-template-columns: 1fr; } }
+.arc-step {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 16px;
+}
+.arc-step .arc-when {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  display: block;
+  margin-bottom: 6px;
+}
+.arc-step .arc-what { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.arc-step p { font-size: 13px; color: var(--text-dim); margin: 0; }
+
+/* ---- Affiliate disclosure ---- */
+.disclosure {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  border-top: 1px solid var(--border);
+  margin-top: 22px;
+  padding-top: 14px;
+  max-width: 720px;
+  line-height: 1.55;
+}
+.value-strip .disclosure {
+  border-top-color: rgba(255,255,255,0.14);
+  color: #9a9c9f;
+  max-width: none;
+  margin-top: 18px;
+}
+
+/* ---- Plan tie-in note inside lessons ---- */
+.plan-note {
+  margin: 24px 0;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface-tan);
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+.plan-note .plan-note-label {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
