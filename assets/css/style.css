@@ -20,12 +20,14 @@
   --max-width: 980px;
 
   /* per-module accent colors, matching the landing page cards */
+  --mod-0: #10596b; /* first week — petrol */
   --mod-1: #7a2e3a; /* mindset — maroon */
   --mod-2: #1f5c4a; /* niche — teal/green */
   --mod-3: #1f3a63; /* operations — blue */
-  --mod-4: #a8461f; /* client acquisition — rust/orange */
-  --mod-5: #4a2f6b; /* agents — purple */
-  --mod-6: #22252b; /* sprint — charcoal/near-black */
+  --mod-4: #7a2060; /* brand & positioning — plum */
+  --mod-5: #a8461f; /* client acquisition — rust/orange */
+  --mod-6: #4a2f6b; /* agents — purple */
+  --mod-7: #22252b; /* sprint — charcoal/near-black */
 
   --footer-bg: #14161a;
   --footer-text: #f4efe4;
@@ -141,12 +143,14 @@ code, .mono, .lesson-tag, .module-num, .eyebrow, .breadcrumb, .lesson-dur, .prog
     linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 22px 22px;
 }
+.module-banner.m0 { background-color: var(--mod-0); }
 .module-banner.m1 { background-color: var(--mod-1); }
 .module-banner.m2 { background-color: var(--mod-2); }
 .module-banner.m3 { background-color: var(--mod-3); }
 .module-banner.m4 { background-color: var(--mod-4); }
 .module-banner.m5 { background-color: var(--mod-5); }
 .module-banner.m6 { background-color: var(--mod-6); }
+.module-banner.m7 { background-color: var(--mod-7); }
 
 .module-num-badge {
   position: absolute;
@@ -221,12 +225,14 @@ code, .mono, .lesson-tag, .module-num, .eyebrow, .breadcrumb, .lesson-dur, .prog
 
 /* module-color accent bar per lesson, set via inline style or body class */
 .accent-bar { height: 5px; width: 100%; }
+.accent-bar.m0 { background: var(--mod-0); }
 .accent-bar.m1 { background: var(--mod-1); }
 .accent-bar.m2 { background: var(--mod-2); }
 .accent-bar.m3 { background: var(--mod-3); }
 .accent-bar.m4 { background: var(--mod-4); }
 .accent-bar.m5 { background: var(--mod-5); }
 .accent-bar.m6 { background: var(--mod-6); }
+.accent-bar.m7 { background: var(--mod-7); }
 
 /* ---- Before-you-start environment checklist ---- */
 .env-check {
@@ -494,3 +500,32 @@ footer.site-footer {
   display: block;
   margin-bottom: 5px;
 }
+
+/* ---- Daily build block (Module 0) ---- */
+.daily-build {
+  margin: 24px 0;
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--mod-0);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 18px 20px;
+}
+.daily-build .daily-label {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--mod-0);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+.daily-build .daily-time {
+  float: right;
+  color: var(--text-faint);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.daily-build p { margin: 0 0 10px; font-size: 14.5px; color: var(--text-dim); }
+.daily-build p:last-child { margin-bottom: 0; }
